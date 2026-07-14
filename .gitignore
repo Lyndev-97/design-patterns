@@ -1,2 +1,5 @@
 node_modelus
+node_modules
 dist
+.idea
+out/
