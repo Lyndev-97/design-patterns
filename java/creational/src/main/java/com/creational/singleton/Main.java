@@ -1,4 +1,6 @@
 package com.creational.singleton;
+import com.creational.singleton.MyDatabaseClassic;
+import com.creational.singleton.User;
 
 // Main.java
 public class Main {
@@ -19,8 +21,8 @@ public class Main {
 
     private static void executarModuloB() {
         MyDatabaseClassic myDatabaseClassic = MyDatabaseClassic.getInstance();
-        myDatabaseClassic.add(new User(1, "Layon", 30));
-        myDatabaseClassic.add(new User(2, "Amanda", 25));
+        myDatabaseClassic.add(new User(3, "Layon", 30));
+        myDatabaseClassic.add(new User(4, "Amanda", 25));
         myDatabaseClassic.show();
     }
 }

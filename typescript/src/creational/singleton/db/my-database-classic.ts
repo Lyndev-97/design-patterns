@@ -5,11 +5,11 @@ interface User {
     age: number;
 }
 
-export class MyDatabaseClassic{
+export class MyDatabaseClassic {
     private static instance: MyDatabaseClassic | null = null;
     private users: User[] = [];
 
-    private constructor() {}
+    private constructor() { }
 
     public static getInstance(): MyDatabaseClassic {
         if (MyDatabaseClassic.instance === null) {
@@ -27,9 +27,9 @@ export class MyDatabaseClassic{
     }
 
     show(): void {
-        for(const user of this.users) {
+        for (const user of this.users) {
             console.log(`ID: ${user.id}, Name: ${user.name}, Age: ${user.age}`);
         }
-}
+    }
 
 }
